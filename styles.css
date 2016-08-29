@@ -1,0 +1,19 @@
+#headshot {
+	border-radius: 50%;
+}
+
+.btn-group{
+	padding: 20px;
+}
+
+.project-container{
+	min-height:  100px;
+}
+
+.project-container .mix{
+	display:  none;
+}
+
+#movie{
+	margin-left: 35px;
+}

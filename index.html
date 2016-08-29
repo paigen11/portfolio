@@ -20,11 +20,14 @@
 <!-- personal CSS -->
 <link rel="stylesheet" type="text/css" href="styles.css">
 
+<!-- MixItUp JS files -->
+<script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
 <!-- personal JS -->
 <script type="text/javascript" src="scripts.js"></script>
 
 </head>
-<body id="page-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <div class="container-fluid">
 
@@ -39,6 +42,7 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
 				<ul class="nav navbar-nav">
+					<li><a class="page-scroll" href ="#intro">Intro</a></li>
 					<li><a class="page-scroll" href ="#about">About</a></li>
 					<li><a class="page-scroll" href="#skills">Skills</a></li>
 					<li><a class="page-scroll" href="#portfolio">Portfolio</a></li>
@@ -48,6 +52,8 @@
 		</nav>
 	</div>
 </div>
+<!-- end navbar -->
+
 <!-- quote -->
 <div class="row quote">	
 	<div class="jumbotron">
@@ -57,17 +63,20 @@
 		</div>
 	</div>
 </div>
+<!-- end quote -->
+
 <!-- intro	 -->
 <div id="intro" class="row intro">
 	<div class="col-xs-12 col-md-6 bio">
 		<h2>I'm Paige.</h2>
 		<p>I'm a web developer with a background in digital marketing.</p>
-		<p>Marketing is great, but I want to build things and have a career that keeps me learning new things each day. That's why I decided to become a web developer.</p>
+		<p>Marketing is great and definitely necessary, but I want to be a builder of things and have a career that keeps me learning each and every day. That's why I decided to become a web developer.</p>
 	</div>
 	<div class="col-xs-12 col-md-6 col-md-offset-6 pic">
-		<img src="images/paige_headshot.jpg">
+		<img id='headshot' src="images/paige_headshot.jpg">
 	</div>
 </div>
+<!-- end intro -->
 
 <!-- about -->
 <div id="about" class="row about text-center">
@@ -75,11 +84,12 @@
 			<h2>About</h2>
 			<p>In July of 2016, I began a rigorous, full-time coding bootcamp with <a href="http://www.digitalcrafts.com/">DigitalCrafts</a> in Atlanta, GA, with the end goal of being a full stack web developer.
 			<br>
-			The pace was intense, but in that short time I was trained in an assortment of programming languages including HTML, CSS, JavaScript, jQuery and AJAX as well as how to think like a developer through daily algorithm and coding challenges. 
+			The pace was intense, but in that short time I've been trained in an assortment of programming languages including HTML, CSS, JavaScript, jQuery and AJAX as well as how to think like a developer through daily algorithm and coding challenges. 
 			<br>
-			When I'm not coding, you can find me with my husband watching movies, cooking and baking something new in the kitchen and planning where to travel to next. 	
+			When I'm not coding, you can find me with my husband watching movies, reading a good book, cooking and baking, and planning where to travel to next. 	
 		</div>
 </div>
+<!-- end about -->
 	
 <!-- skills -->
 <div id="skills" class="row skills">
@@ -102,14 +112,95 @@
 		<i class="fa fa-usd fa-4x" aria-hidden="true"></i>
 		<p>jQuery</p>
 	</div>
+	<div class="col-xs-6 col-md-3">
+		<i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
+		<p>Sass</p>
+	</div>
+	<div class="col-xs-6 col-md-3">
+		<i class="fa fa-code-fork fa-4x" aria-hidden="true"></i>
+		<p>AngularJS</p>
+	</div>
+	<div class="col-xs-6 col-md-3">
+		<i class="fa fa-terminal fa-4x" aria-hidden="true"></i>
+		<p>Node.js</p>
+	</div>
 </div>
+<!-- end skills -->
 
 <!-- projects -->
-
-	<!-- implement mix it up sorting method -->
-	<!-- blackjack game added, need to link to it from the homepage -->
+<div id="portfolio" class="row projects text-center">
+		<div class="container-fluid">
+			<div class="col-xs-12">
+				<h2>Portfolio</h2>
+			</div>
+			<div class='btn-group' role='group' aria-label="...">
+				<button type="button" class='filter btn btn-default' data-filter='all'>Show All Projects</button>
+				<button type="button" class='filter btn btn-default' data-filter='.category-fe'>Front End Projects</button>
+				<button type="button" class='filter btn btn-default' data-filter='.category-be'>Back End Projects</button>
+			</div>
+			<div class="project-container col-xs-12">
+				<div class="col-xs-6 col-sm-4">
+					<div class="project-box mix category-fe" data-myorder="1">
+						<p class='title'>Zombiez: The Game</p>
+						<p class='tools'>HTML, CSS/SASS, JavaScript, jQuery, Leaflet API</p>
+						<a href="#" target="_blank"><img src="images/sites/zombiez.png" class="img-responsive"></a>
+						<p><a href="https://github.com/paigen11/frontend-project" class='btn btn-default' target="_blank">Github Code</a>
+						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					<div class="project-box mix category-fe" data-myorder="2">
+						<p class='title'>Google Maps</p>
+						<p class='tools'>HTML, CSS/SASS, JavaScript, AngularJS, Google Maps API</p>
+						<a href="#" target="_blank"><img src="images/sites/google-maps.png" class="img-responsive"></a>
+						<p><a href="https://github.com/paigen11/google-maps" class='btn btn-default' target="_blank">Github Code</a>
+						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					<div class="project-box mix category-fe" data-myorder="3">
+						<p class='title'>Movie App</p>
+						<p class='tools'>HTML, CSS/SASS, jQuery, MovieDB API, FancyBox API/<p>
+						<a href="#" target="_blank"><img id="movie" src="images/sites/movie-app.png" class="img-responsive"></a>
+						<p><a href="https://github.com/paigen11/movie-app" class='btn btn-default' target="_blank">Github Code</a>
+						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					<div class="project-box mix category-fe" data-myorder="4">
+						<p class='title'>Weather Widget</p>
+						<p class='tools'>HTML, CSS, JavaScript, jQuery<p>
+						<a href="#" target="_blank"><img src="images/sites/weather-widget.png" class="img-responsive"></a>
+						<p><a href="https://github.com/paigen11/weather-widget" class='btn btn-default' target="_blank">Github Code</a>
+						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-4">
+					<div class="project-box mix category-fe" data-myorder="5">
+						<p class='title'>Blackjack Game</p>
+						<p class='tools'>HTML, CSS, JavaScript, jQuery</p>
+						<a href="#" target="_blank"><img src="images/sites/blackjack.png" class="img-responsive"></a>
+						<p><a href="https://github.com/paigen11/blackjack" class='btn btn-default' target="_blank">Github Code</a>
+						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+<!-- end of portfolio section -->
 
 <!-- contact -->
+<div id="contact" class="row contact text-center">
+	<div class="container">
+		<div class="col-xs-12">
+			<h2>Want To Get In Touch With Me? Here's How</h2>
+		</div>
+		<div class="col-xs-12">
+			<p>Here's where you can learn more about me and my code</p>
+		</div>	
+	</div>
+
+</div>
 
 
 
@@ -119,5 +210,3 @@
 </html>
 
 <!-- addt thoughts parallax background? -->
-<!-- add coding languages to about section as they become available -->
-<!-- add coding icons to skills section as we learn -->
