@@ -2,6 +2,10 @@
 	border-radius: 50%;
 }
 
+#intro, #about, #skills, #portfolio, #contact{
+	padding-top: 35px;
+}
+
 .btn-group{
 	padding: 20px;
 }
