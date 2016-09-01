@@ -1,9 +1,16 @@
+a.page-scroll.contact{
+	margin-right: 20px;
+}
 #headshot {
 	border-radius: 50%;
 }
 
 #intro, #about, #skills, #portfolio, #contact{
 	padding-top: 35px;
+}
+
+#skills{
+	text-align: center;
 }
 
 .btn-group{

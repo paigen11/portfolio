@@ -1,6 +1,10 @@
 // On document ready:
 $(document).ready(function(){
 
+	$(".navbar-nav li a").click(function(event) {
+    $(".navbar-collapse").collapse('hide');
+	  });
+
 	$('body').scrollspy({target: '.navbar', offset: 50});
 
 	$('.myNavBar a').on('click', function(event){
