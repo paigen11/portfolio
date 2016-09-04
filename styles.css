@@ -1,5 +1,19 @@
+body{
+	font-family: 'Handlee', cursive;
+	font-family: 'Sriracha', cursive;
+}
+
 a.page-scroll.contact{
 	margin-right: 20px;
+}
+
+.container-fluid{
+	padding: 0px;
+}
+
+.jumbotron p{
+	padding-left: 20px;
+	font-family: 'Handlee', cursive;
 }
 
 #intro{
@@ -8,27 +22,45 @@ a.page-scroll.contact{
 
 .bio{
 	/* vertical-align: middle; */
-	display: table;
 	height: 403px;
 }
 
+.bio p, .bio h2{
+	margin-left: 60px;
+	margin-right: 60px;
+	text-align: center;
+}
+
 .bio p{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: left;
+	padding-top: 10%;
+}
+
+.pic{
+	text-align: center;
 }
 
 #headshot {
 	border-radius: 50%;
 	height: 403px;
+	vertical-align: middle;
 }
 
 #intro, #about, #skills, #portfolio, #contact{
 	padding-top: 35px;
 }
 
+#about p{
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
 #skills{
 	text-align: center;
+}
+
+.skill{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .btn-group{
@@ -36,13 +68,46 @@ a.page-scroll.contact{
 }
 
 .project-container{
-	min-height:  100px;
+	min-height: 100px;
 }
 
 .project-container .mix{
 	display:  none;
 }
 
-#movie{
-	margin-left: 35px;
+.pro{
+	height: 370px;
+	/* border: 2px solid black; */
 }
+
+.tools{
+	height: 40px;
+}
+
+#movie.img-responsive{
+	display: inline-block;
+}
+
+.repos{
+	margin-top: 10px;
+}
+
+#contact{
+	height: 300px;
+}
+
+footer{
+	height: 80px;
+	color: white;
+	background-color: #222222;
+}
+
+footer p{
+	padding-top: 20px;
+}
+
+.back-to-top{
+	margin-top: 20px;
+}
+
+

@@ -20,6 +20,9 @@
 <!-- wow CSS files -->
 <link rel="stylesheet" href="css/animate.css">
 
+<!-- Google Font files -->
+<link href="https://fonts.googleapis.com/css?family=Handlee|Sriracha" rel="stylesheet">
+
 <!-- personal CSS -->
 <link rel="stylesheet" type="text/css" href="styles.css">
 
@@ -81,9 +84,10 @@
 <!-- intro	 -->
 <div id="intro" class="row intro">
 	<div class="col-xs-12 col-md-6 bio">
-		<h2>I'm Paige.</h2>
-		<p>I'm a web developer with a background in digital marketing.
-		<br>Marketing is great and definitely necessary, but I want to be a builder of things and have a career that keeps me learning each and every day. That's why I decided to become a web developer.</p>
+		<h2>Hi, I'm Paige.</h2>
+		<p>I'm a full stack web developer with a background in digital marketing.
+		<br>
+		<br>Marketing is great, but I want to be a builder of things and have a career that keeps me learning and solving problems each and every day. That's why I decided to become a web developer.</p>
 	</div>
 	<div class="col-xs-12 col-md-6 pic">
 		<img id='headshot' src="images/paige_headshot.jpg">
@@ -97,9 +101,11 @@
 			<h2>About</h2>
 			<p>In July of 2016, I began a rigorous, full-time coding bootcamp with <a href="http://www.digitalcrafts.com/">DigitalCrafts</a> in Atlanta, GA, with the end goal of being a full stack web developer.
 			<br>
-			The pace was intense, but in that short time I've been trained in an assortment of programming languages including HTML, CSS, JavaScript, jQuery and AJAX as well as how to think like a developer through daily algorithm and coding challenges. 
 			<br>
-			When I'm not coding, you can find me with my husband watching movies, reading a good book, cooking and baking, and planning where to travel to next. 	
+			The pace was intense, but in that short time I've been trained in a wide variety of programming languages. My front end experience includes HTML5, CSS3, JavaScript, jQuery, AJAX and AngularJS. My back end experience is in Node.js, Express and MongoDB. In addition to these languages, I've been taught to think like a developer through daily problem solving, algorithm and coding challenges. 
+			<br>
+			<br>
+			When I'm not coding, you can find me with my husband watching movies, reading a good book, cooking and baking, and planning where to travel to next.</p> 	
 		</div>
 </div>
 <!-- end about -->
@@ -109,39 +115,39 @@
 	<div class="col-xs-12 skill-title text-center">
 		<h2>Skills</h2>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-html5 fa-4x" aria-hidden="true"></i>
 		<p>HTML5</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-css3 fa-4x" aria-hidden="true"></i>
 		<p>CSS3</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-code fa-4x" aria-hidden="true"></i>
 		<p>JavaScript</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-usd fa-4x" aria-hidden="true"></i>
 		<p>jQuery</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-paint-brush fa-4x" aria-hidden="true"></i>
 		<p>Sass</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-code-fork fa-4x" aria-hidden="true"></i>
 		<p>AngularJS</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-terminal fa-4x" aria-hidden="true"></i>
 		<p>Node.js</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-bolt fa-4x" aria-hidden="true"></i>
 		<p>Express</p>
 	</div>
-	<div class="col-xs-6 col-md-3">
+	<div class="skill col-xs-6 col-md-3">
 		<i class="fa fa-envira fa-4x" aria-hidden="true"></i>
 		<p>MongoDB</p>
 	</div>
@@ -150,64 +156,85 @@
 
 <!-- projects -->
 <div id="portfolio" class="row projects text-center wow slideInRight">
-		<div class="container-fluid">
-			<div class="col-xs-12">
-				<h2>Portfolio</h2>
-			</div>
-			<div class='btn-group' role='group' aria-label="...">
+	<div class="container-fluid">
+		<div class="col-xs-12">
+			<h2>Portfolio</h2>
+		</div>
+		<div class='btn-group' role='group' aria-label="...">
 				<button type="button" class='filter btn btn-default' data-filter='all'>Show All Projects</button>
 				<button type="button" class='filter btn btn-default' data-filter='.category-fe'>Front End Projects</button>
 				<button type="button" class='filter btn btn-default' data-filter='.category-be'>Back End Projects</button>
-			</div>
-			<div class="project-container col-xs-12">
-				<div class="col-xs-6 col-sm-4">
-					<div class="project-box mix category-fe" data-myorder="1">
+		</div>
+		<div class="project-container col-xs-12">
+				<div class="pro col-xs-6 col-sm-4 mix category-fe" data-myorder="1">
+					<div class="project-box">
 						<p class='title'>Zombiez: The Game</p>
 						<p class='tools'>HTML, CSS/SASS, JavaScript, jQuery, Leaflet API</p>
-						<a href="#" target="_blank"><img src="images/sites/zombiez.png" class="img-responsive"></a>
-						<p><a href="https://github.com/paigen11/frontend-project" class='btn btn-default' target="_blank">Github Code</a>
-						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						<a href="#" target="_blank"><img src="images/sites/zombiez2.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/frontend-project" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="project-box mix category-fe" data-myorder="2">
+				<div class="pro col-xs-6 col-sm-4 mix category-fe" data-myorder="2">
+					<div class="project-box">
 						<p class='title'>Google Maps</p>
 						<p class='tools'>HTML, CSS/SASS, JavaScript, AngularJS, Google Maps API</p>
-						<a href="#" target="_blank"><img src="images/sites/google-maps.png" class="img-responsive"></a>
-						<p><a href="https://github.com/paigen11/google-maps" class='btn btn-default' target="_blank">Github Code</a>
-						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						<a href="#" target="_blank"><img src="images/sites/maps.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/google-maps" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="project-box mix category-fe" data-myorder="3">
+				<div class="pro col-xs-6 col-sm-4 mix category-fe" data-myorder="3">
+					<div class="project-box">
 						<p class='title'>Movie App</p>
-						<p class='tools'>HTML, CSS/SASS, jQuery, MovieDB API, FancyBox API/<p>
-						<a href="#" target="_blank"><img id="movie" src="images/sites/movie-app.png" class="img-responsive"></a>
-						<p><a href="https://github.com/paigen11/movie-app" class='btn btn-default' target="_blank">Github Code</a>
-						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						<p class='tools'>HTML, CSS/SASS, jQuery, MovieDB API, FancyBox API</p>
+						<a href="#" target="_blank"><img id="movie" src="images/sites/movie.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/movie-app" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>	
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="project-box mix category-fe" data-myorder="4">
+				<div class="pro col-xs-6 col-sm-4 mix category-fe" data-myorder="4">
+					<div class="project-box">
 						<p class='title'>Weather Widget</p>
-						<p class='tools'>HTML, CSS, JavaScript, jQuery<p>
-						<a href="#" target="_blank"><img src="images/sites/weather-widget.png" class="img-responsive"></a>
-						<p><a href="https://github.com/paigen11/weather-widget" class='btn btn-default' target="_blank">Github Code</a>
-						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						<p class='tools'>HTML, CSS, JavaScript, jQuery</p>
+						<a href="#" target="_blank"><img src="images/sites/weather.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/weather-widget" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>	
 					</div>
 				</div>
-				<div class="col-xs-6 col-sm-4">
-					<div class="project-box mix category-fe" data-myorder="5">
+				<div class="pro col-xs-6 col-sm-4 mix category-fe" data-myorder="5">
+					<div class="project-box">
 						<p class='title'>Blackjack Game</p>
 						<p class='tools'>HTML, CSS, JavaScript, jQuery</p>
-						<a href="#" target="_blank"><img src="images/sites/blackjack.png" class="img-responsive"></a>
-						<p><a href="https://github.com/paigen11/blackjack" class='btn btn-default' target="_blank">Github Code</a>
-						<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						<a href="#" target="_blank"><img src="images/sites/black-jack.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/blackjack" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>	
 					</div>
 				</div>
-			</div>		
-		</div>
+				<div class="pro col-xs-6 col-sm-4 mix category-be" data-myorder="6">
+					<div class="project-box">
+						<p class='title'>Draw Together</p>
+						<p class='tools'>HTML, CSS, JavaScript, Node.js, Socket.io</p>
+						<a href="#" target="_blank"><img src="images/sites/group-drawing.png" class="img-responsive"></a>
+						<div class="repos">
+							<p><a href="https://github.com/paigen11/socketio-chat-room" class='btn btn-default' target="_blank">Github Code</a>
+							<a href="#" class="btn btn-default" target="_blank">Demo</a></p>
+						</div>	
+					</div>
+				</div>		
+		</div>	
 	</div>
+</div>	
 <!-- end of portfolio section -->
 
 <!-- contact -->
@@ -217,7 +244,8 @@
 			<h2>Want To Get In Touch With Me? Here's How</h2>
 		</div>
 		<div class="col-xs-12">
-			<p>Here's where you can learn more about me and my code. Or just want to say hi! 
+			<p>Here's where you can learn more about me and my code, or just say hi.
+			<br>
 			<br>I'm currently open to new job opportunities.</p>
 		</div>
 		<ul class='list-inline social btns'>
@@ -242,18 +270,20 @@
 <!-- end of contact section -->
 
 <!-- footer -->
- <footer>
-      <div class="row content text-center">
-        <div class="col col-sm-2"></div>
-        <div class="col col-sm-8">
-          <p>made in atlanta | copyright &copy;2016<br> <a href="mailto:paigen11@gmail.com" style="color: #35272d"><strong>paigen11@gmail.com</strong></a></p>
-        </div>
-        <div class="col col-sm-2">
-          <!-- back to top button -->
-          <a href="#page-top" class="page-scroll back-to-top btn btn-default btn-md"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></a>
-        </div>
-      </div>
+ 	<footer>
+	      <div class="row content text-center">
+	        <div class="col col-sm-2"></div>
+	        <div class="col col-sm-8">
+	          <p>made in atlanta | copyright &copy;2016<br> <a href="mailto:paigen11@gmail.com" style="color: #686868"><strong>paigen11@gmail.com</strong></a></p>
+	        </div>
+	        <div class="col col-sm-2">
+	          <!-- back to top button -->
+	          <a href="#page-top" class="page-scroll back-to-top btn btn-default btn-md"><i class="fa fa-arrow-up fa-fw" aria-hidden="true"></i></a>
+	        </div>
+	      </div>
     </footer>
+
+</div>
 
 </body>
 </html>
