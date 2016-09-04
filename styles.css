@@ -1,8 +1,26 @@
 a.page-scroll.contact{
 	margin-right: 20px;
 }
+
+#intro{
+	table-layout: fixed;
+}
+
+.bio{
+	/* vertical-align: middle; */
+	display: table;
+	height: 403px;
+}
+
+.bio p{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: left;
+}
+
 #headshot {
 	border-radius: 50%;
+	height: 403px;
 }
 
 #intro, #about, #skills, #portfolio, #contact{
