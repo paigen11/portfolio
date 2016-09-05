@@ -1,7 +1,8 @@
 body{
 	font-family: 'Handlee', cursive;
-	font-family: 'Sriracha', cursive;
+	/* font-family: 'Sriracha', cursive; */
 }
+
 
 a.page-scroll.contact{
 	margin-right: 20px;
@@ -11,9 +12,18 @@ a.page-scroll.contact{
 	padding: 0px;
 }
 
+.jumbotron{
+	margin-bottom: 0px;
+}
+
+.jumbotron h1{
+	padding-left: 60px;
+}
+
 .jumbotron p{
-	padding-left: 20px;
-	font-family: 'Handlee', cursive;
+	padding-left: 80px;
+	padding-top: 15px;
+	padding-right: 20px;
 }
 
 #intro{
@@ -33,6 +43,7 @@ a.page-scroll.contact{
 
 .bio p{
 	padding-top: 10%;
+	font-size: 20px;
 }
 
 .pic{
@@ -43,19 +54,33 @@ a.page-scroll.contact{
 	border-radius: 50%;
 	height: 403px;
 	vertical-align: middle;
+	border: 5px solid black;
 }
 
 #intro, #about, #skills, #portfolio, #contact{
 	padding-top: 35px;
+	border-top: 10px solid black;
+}
+
+#intro{
+	padding-bottom: 50px;
+	background-color: #ffccee;
+}
+
+#about{
+	background-color: #b3ffff;
 }
 
 #about p{
 	margin-right: 60px;
 	margin-left: 60px;
+	font-size: 20px;
+	padding-bottom: 40px;
 }
 
 #skills{
 	text-align: center;
+	background-color: #99ff99;
 }
 
 .skill{
@@ -63,8 +88,21 @@ a.page-scroll.contact{
 	padding-bottom: 10px;
 }
 
+.skill p{
+	padding-top: 10px;
+	font-size: 15px;
+}
+
+#portfolio{
+	background-color: #dab3ff;
+}
+
 .btn-group{
 	padding: 20px;
+}
+
+.btn-group button{
+	font-size: 15px;
 }
 
 .project-container{
@@ -77,11 +115,15 @@ a.page-scroll.contact{
 
 .pro{
 	height: 370px;
-	/* border: 2px solid black; */
+}
+
+.title {
+	font-size: 20px;
 }
 
 .tools{
 	height: 40px;
+	font-size: 15px;
 }
 
 #movie.img-responsive{
@@ -92,12 +134,28 @@ a.page-scroll.contact{
 	margin-top: 10px;
 }
 
+.repos .btn{
+	font-size: 15px;
+}
+
 #contact{
-	height: 300px;
+	background-color: #ffd699;
+}
+
+.in-touch{
+	font-size: 20px;
+	padding-bottom: 15px;
+}
+
+.list-inline{
+	padding-bottom: 30px;
+}
+
+.list-inline .btn{
+	font-size: 15px;
 }
 
 footer{
-	height: 80px;
 	color: white;
 	background-color: #222222;
 }
@@ -108,6 +166,7 @@ footer p{
 
 .back-to-top{
 	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
