@@ -26,13 +26,23 @@ a.page-scroll.contact{
 	padding-right: 20px;
 }
 
+@media screen and (max-width: 375px){
+	.jumbotron h1{
+		padding-top: 15px;
+		padding-left: 30px;
+	}
+	.jumbotron p{
+		padding-left: 45px;
+	}
+}
+
 #intro{
 	table-layout: fixed;
 }
 
 .bio{
 	/* vertical-align: middle; */
-	height: 403px;
+	/* height: 403px; */
 }
 
 .bio p, .bio h2{
@@ -52,9 +62,15 @@ a.page-scroll.contact{
 
 #headshot {
 	border-radius: 50%;
-	height: 403px;
+	/* height: 403px; */
 	vertical-align: middle;
 	border: 5px solid black;
+}
+
+@media screen and (max-width: 375px){
+	#headshot{
+		height: 340px;
+	}
 }
 
 #intro, #about, #skills, #portfolio, #contact{
@@ -101,6 +117,12 @@ a.page-scroll.contact{
 	padding: 20px;
 }
 
+@media screen and (max-width: 375px){
+	.btn-group{
+		margin-left: 30%;
+	}
+}
+
 .btn-group button{
 	font-size: 15px;
 }
@@ -130,6 +152,11 @@ a.page-scroll.contact{
 	display: inline-block;
 }
 
+img.img-responsive{
+	margin: auto;
+}
+
+
 .repos{
 	margin-top: 10px;
 }
@@ -153,6 +180,14 @@ a.page-scroll.contact{
 
 .list-inline .btn{
 	font-size: 15px;
+}
+
+@media screen and (max-width: 375px){
+	.list-inline li{
+		display: block;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
 
 footer{
