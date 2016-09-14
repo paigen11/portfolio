@@ -269,13 +269,32 @@
 		</ul>
 
 		<!-- contact form -->
-		<form action='mail.php' method='post'>
-			<input type="text" name="fullName" placeholder="Name">
-     		<input type="email" name="email" placeholder="Email Address">
-     		<textarea name="body" placeholder="Your message here"></textarea>
-     		<button type='submit' class='btn btn-primary'>Send</button>
-		</form>
-		
+		<div class='row contact-form'>
+			<form class='form-horizontal' action='mail.php' method='post'>
+				<div class='form-group'>
+					<label for='fullName' class='col-xs-2'>Name</label>
+					<div class='col-xs-10'>
+						<input type="text" name="fullName" placeholder="Name">
+					</div>
+				</div>	
+				<div class='form-group'>	
+					<label for='email' class='col-xs-2'>Email Address</label>
+		     		<div class='col-xs-10'>
+		     			<input type="email" name="email" placeholder="Email Address">
+		     		</div>
+		     	</div>	
+		     	<div class='form-group'>	
+		     		<label for='body' class='col-xs-2'>Message</label>
+		     		<div class='col-xs-10'>
+		     			<textarea class='form-control' rows='4' name="body" placeholder="Your message here"></textarea>
+		     		</div>
+		     	</div>		
+		     		<div class='col-xs-2 col-xs-offset-1 submit-button'>
+		     			<button type='submit' class='btn btn-primary'>Send</button>
+		     		</div>	
+			</form>
+			
+		</div>
 		
 	</div>
 
