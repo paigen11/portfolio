@@ -22,7 +22,7 @@ $(document).ready(function(){
 
 	$('.contact-form').submit(function(){
 		$('.thank-you').text("Thanks for your note! I'll be in touch soon.");
-		// return false;
+		return false;
 	})
 });
 
