@@ -19,7 +19,7 @@
             echo "Message sent!";
       }
       
-      header('location: http://paigeniedringhaus.com/#contact');
-      '<div id="thank-you">Message sent!</div>'
+      header('location: http://paigeniedringhaus.com/#header?success');
+
 
 ?>
