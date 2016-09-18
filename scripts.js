@@ -24,15 +24,6 @@ $(document).ready(function(){
 		$('.thank-you').text("Thanks for your note! I'll be in touch soon.");
 		return false;
 	})
-
-	// $(function(){
-	// 	$('.thank-you').hide();
-	// });
-	
-	// $("#show").click(function(e){
-	// 	$(".thank-you").show();
-	// 	e.preventDefault();
-	// })
 });
 
 $(function(){
