@@ -109,6 +109,11 @@ a.page-scroll.contact{
 	font-size: 15px;
 }
 
+.skill img{
+	height: 56px;
+	width:  48px;
+}
+
 #portfolio{
 	background-color: #dab3ff;
 }
@@ -230,5 +235,9 @@ footer p{
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
+/* .thanks{
+	display: none;
+} */
 
 

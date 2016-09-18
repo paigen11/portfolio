@@ -19,6 +19,6 @@
             echo "Message sent!";
       }
       
-      header('location: http://paigeniedringhaus.com/#page-top?success');
+      header('location: http://paigeniedringhaus.com/#contact');
 
 ?>
