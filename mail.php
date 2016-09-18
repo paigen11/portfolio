@@ -16,9 +16,10 @@
       if(!$mail->Send()) {
             echo "Mailer Error: " . $mail->ErrorInfo;
       } else {
-            echo '<div id="thank-you">Message sent!</div>';
+            echo "Message sent!";
       }
       
-      // header('location: http://paigeniedringhaus.com/#contact');
+      header('location: http://paigeniedringhaus.com/#contact');
+      '<div id="thank-you">Message sent!</div>'
 
 ?>
