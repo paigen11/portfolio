@@ -40,11 +40,6 @@ a.page-scroll.contact{
 	table-layout: fixed;
 }
 
-.bio{
-	/* vertical-align: middle; */
-	/* height: 403px; */
-}
-
 .bio p, .bio h2{
 	margin-left: 60px;
 	margin-right: 60px;
@@ -62,7 +57,6 @@ a.page-scroll.contact{
 
 #headshot {
 	border-radius: 50%;
-	/* height: 403px; */
 	vertical-align: middle;
 	border: 5px solid black;
 }
@@ -225,6 +219,9 @@ textarea.form-control{
 	textarea.form-control{
 		margin-left: 25%;
 		width: 200px;
+	}
+	.submit-button{
+		margin-left: 25%
 	}
 }
 
