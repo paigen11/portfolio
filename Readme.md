@@ -1,3 +1,9 @@
-# Portfolio coming soon
+# My personal portfolio site. 
+---
+My portfolio site featuring some of my most recent projects. Check it out!
 
-##I am a full-stack developer with an emphasis in JavaScript.
+I'm currently open to new web dev job opportunities.
+
+##Live Site
+---
+[Live link](http://paigeniedringhaus.com/)
