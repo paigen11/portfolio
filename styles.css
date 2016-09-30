@@ -20,6 +20,68 @@ a.page-scroll.contact{
 	padding-left: 60px;
 }
 
+.headline.rotate-2 .headline-words{
+	display: inline-block;
+	perspective: 700px;
+}
+
+.headline.rotate-2 b{
+	opacity: 0;
+	transform-origin: 30% 100%;
+	transform: translateZ(-20px) rotateX(90deg);
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.headline.rotate-2 b.is-visible{
+	position: relative;
+	opacity: 1;
+	transform: translateZ(-20px) rotateX(0deg);
+}
+
+.headline.rotate-2 b.is-hidden{
+	transform:  rotateX(90deg);
+	animation: rotate-2-out 1.2s;
+}
+
+@keyframes rotate-2-in{
+	0%{
+		transform: translateZ(-20px) rotateX(0deg);
+		opacity: 0;
+	}
+	35% {
+    	transform: translateZ(-20px) rotateX(120deg);
+    	opacity: 0.5;
+  	}
+  	65% {
+    	opacity: 0.7;
+  	}
+  	100% {
+    	transform: translateZ(-20px) rotateX(180deg);
+    	opacity: 1;
+  	}
+}
+
+@keyframes rotate-2-out{
+	0% {
+    	transform: translateZ(-20px) rotateX(0deg);
+    	opacity: 1;
+  	}
+  	35% {
+    	transform: translateZ(-20px) rotateX(90deg);
+    	opacity: 0.3;
+  	}
+  	65% {
+    	opacity: 0;
+  	}
+  	100% {
+    	transform: translateZ(-20px) rotateX(180deg);
+    	opacity: 0;
+ 	}
+}
+
 .jumbotron p{
 	padding-left: 80px;
 	padding-top: 15px;
@@ -155,6 +217,73 @@ img.img-responsive{
 	margin: auto;
 }
 
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p{
+  opacity: 1;
+  margin-top: 15%;
+  font-size: 18px;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
 
 .repos{
 	margin-top: 10px;
@@ -162,6 +291,7 @@ img.img-responsive{
 
 .repos .btn{
 	font-size: 15px;
+	margin-top: 10px;
 }
 
 #contact{
