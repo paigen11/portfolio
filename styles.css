@@ -90,7 +90,7 @@ a.page-scroll.contact{
 
 @media screen and (max-width: 375px){
 	.jumbotron h1{
-		padding-top: 15px;
+		padding-top: 25px;
 		padding-left: 20px;
 		font-size: 30px;
 	}
