@@ -19,7 +19,7 @@
             echo "Message sent!";
       }
       
-      header('location: http://paigeniedringhaus.com/#header?success');
+      header('location: http://pn-portfolio.surge.sh#header?success');
 
 
 ?>
